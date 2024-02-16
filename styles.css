@@ -152,16 +152,16 @@ body {
 
 @keyframes typing {
   from {
-    width: 0; /* Start with zero width */
+    width: 0; 
   }
   to {
-    width: auto; /* Expand width to fit content */
+    width: auto; 
   }
 }
 
 @keyframes blink-caret {
   from, to {
-    border-color: transparent; /* Blinking effect for cursor */
+    border-color: transparent;
   }
   50% {
     border-color: orange;
@@ -247,11 +247,11 @@ body {
 }
 
 .hobby-item {
-    flex-basis: 48%; /* Adjust as needed */
+    flex-basis: 48%; 
     padding: 20px;
     margin-bottom: 10px;
     margin-right: 10px;
-    background-color: #EECB14; /* Optional background color */
+    background-color: #EECB14; 
     border-radius: 10px;
 }
 
@@ -271,7 +271,7 @@ body {
   }
 }
 
-/* Apply fade-in animation to specific elements */
+
 .content_right p {
   animation: fadeIn 1s ease-out;
 }
@@ -353,7 +353,7 @@ body {
     }
 
     #home .right {
-        display: none; /* Hide the image on mobile */
+        display: none;
     }
 
     #home .left h1 {
