@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Joshua Buncayo | Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+	<div class="navbar" id="myNavbar">
+
+		<div class="left-section">
+			<a href="#home" class="nav-link">Home</a>
+			<a href="#about" class="nav-link">About</a>
+			<a href="#project" class="nav-link">Project</a>
+			<a href="#contact" class="nav-link">Contact</a>
+		</div>
+
+		<div class="center-section">
+			<h3>PORTFOLIO</h3>
+		</div>
+
+		<div class="right-section">
+			<div class="menu" onclick="toggleMenu(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="sidebar" id="sidebar">
+		<a href="#home" class="nav-link">Home</a>
+		<a href="#about" class="nav-link">About</a>
+		<a href="#project" class="nav-link">Project</a>
+		<a href="#contact" class="nav-link">Contact</a>
+	</div>
+
+	<section id="home">
+
+		<div class="left">
+
+			<h3>Hello! It's me.</h3>
+			<h1 style="font-size: 40px">Joshua Buncayo</h1>
+			<h1>And I'm a <span class="stud" style="color: #EECB14"></span></h1>
+			<p style="padding-top: 35px">I’m 3rd Year College Student, <br>Studying at <span class="DLL">Dalubhasaan ng Lungsod ng Lucena.</span> <br>Taking Bachelor of Science in Information Technology</p>
+
+			<div style="padding-left: 35px">
+				<a href="https://www.facebook.com/jbuncayo25" target="_blank" class="fab fa-facebook-f"></a>
+				<a href="https://www.instagram.com/jbuncayo" target="_blank" class="fab fa-instagram"></a>
+				<a href="https://www.messenger.com/t/jbuncayo25" target="_blank" class="fab fa-facebook-messenger"></a>
+
+			</div>
+			
+		</div>
+
+		<div class="right">
+			<div class="profile">
+        		<img src="profile.jpg" alt="Profile Picture">
+      		</div>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="container">
+			<h1 class="title">ABOUT ME</h1>
+		</div>
+
+		<div class="content">
+			<div class="content_left">
+				<img src="about pic.jpg" alt="about pic">
+			</div>
+
+			<div class="content_right">
+				<p>I'm currently in my third year of college, pursuing a degree in Information Technology (BSIT). <br>My academic focus revolves around technology and creative expression, with a particular interest in fashion. <br>I find joy in thrift shopping, where I blend affordability and individuality to create unique styles. <br>Music is a constant inspiration, accompanying me throughout my daily activities and driving my creative pursuits. <br>In my leisure time, I enjoy strolling outdoors, finding peace in nature's beauty. <br>Basketball allows me to embrace competition and teamwork, <br>while my true fascination lies in exploring the sea's depths and mysteries, <br>sparking a continuous sense of curiosity and exploration.</p>
+
+				<div class="hobby">
+					<h2>Hobby</h2>
+					<div class="hobby-row">
+        				<div class="hobby-item"><i class="fa fa-code"></i> Coding</div>
+        				<div class="hobby-item"><i class="fa fa-tshirt"></i> Fashion</div>
+    				</div>
+    				<div class="hobby-row">
+        				<div class="hobby-item"><i class="fa fa-music"></i> Music</div>
+        				<div class="hobby-item"><i class="fa fa-walking"></i> Walking</div>
+    				</div>
+    				<div class="hobby-row">
+        				<div class="hobby-item"><i class="fa fa-basketball-ball"></i> Basketball</div>
+        				<div class="hobby-item"><i class="fa fa-water"></i> Exploring the Sea</div>
+    				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="project">
+		<h1>UNDER DEVELOP</h1>
+	</section>
+
+	<section id="contact">
+
+		<form class="contact-form" action="#" method="POST">
+			<input type="text" name="name" placeholder="Your Name" required>
+			<input type="email" name="email" placeholder="Your Email" required>
+			<input type="text" name="subject" placeholder="Subject" required>
+			<textarea name="message" placeholder="Message" rows="5" required></textarea>
+			<input type="submit" value="Submit">
+
+		</form>
+
+	</section>
+
+	<script src="main.js"></script>
+</body>
+</html>
