@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll("section");
     const sidebarLinks = document.querySelectorAll(".sidebar a");
 
-    // Function to update the active link in the navbar based on the section in view
     function updateActiveLink() {
         const scrollPosition = window.scrollY;
 
@@ -12,15 +11,12 @@ document.addEventListener("DOMContentLoaded", function() {
             const sectionHeight = section.clientHeight;
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                // Remove the "active" class from all links
                 navLinks.forEach(navLink => {
                     navLink.classList.remove("active");
                 });
                 
-                // Add the "active" class to the corresponding link
                 navLinks[index].classList.add("active");
 
-                // Add the "active" class to the corresponding sidebar link
                 sidebarLinks.forEach(sidebarLink => {
                     sidebarLink.classList.remove("active");
                 });
@@ -29,20 +25,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Call the updateActiveLink function when the page is loaded and when scrolling
     window.addEventListener("load", function() {
         updateActiveLink();
 
-        // Check if there's a hash in the URL
         if (!window.location.hash) {
-            // Scroll to the home section manually if there's no hash (page is refreshed)
             const homeSection = document.getElementById("home");
             window.scrollTo({
                 top: homeSection.offsetTop,
                 behavior: "smooth"
             });
 
-            // Set the home link in the sidebar as active
             sidebarLinks.forEach(sidebarLink => {
                 sidebarLink.classList.remove("active");
             });
@@ -51,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     window.addEventListener("scroll", updateActiveLink);
 
-    // Smooth scrolling when clicking on navbar links
     navLinks.forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault();
@@ -66,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Smooth scrolling when clicking on sidebar links
     sidebarLinks.forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault();
@@ -102,18 +92,18 @@ function typeWriter(element, text, i) {
         i++;
         setTimeout(function() {
             typeWriter(element, text, i);
-        }, 200); // Adjust typing speed here (milliseconds)
+        }, 200); 
     } else {
         setTimeout(function() {
             element.textContent = ""; // Reset the text content
             typeWriter(element, text, 0); // Restart typing
-        }, 2000); // Adjust the pause before restarting typing (milliseconds)
+        }, 2000); 
     }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
     const studentElement = document.querySelector(".stud");
-    typeWriter(studentElement, text, 0); // Start typing "Student" when the page loads
+    typeWriter(studentElement, text, 0); // Start typing "Student" 
 });
 
 function toggleMenu(x){
