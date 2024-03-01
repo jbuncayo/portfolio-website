@@ -277,12 +277,75 @@ body {
 }
 /*Project Design*/
 #project {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: white;
+    height: 100%;
+    padding-top: 10px;
 }
+
+#project .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project .container .works {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+#project .container .works .work {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#project .container .works .work:nth-child(-n +3) {
+    flex-basis: calc(33.3% - 2rem);
+    margin-bottom: 2rem;
+}
+
+#project .container .works .work:nth-child(n + 4) {
+    flex-basis: calc(33.3% - 2rem);
+}
+
+.works .work img {
+    width: 525px;
+    height: 400px;
+}
+
+.works .work .work_title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.works .work .buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.works .work .buttons a {
+    border: 2px solid #EECB14;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.works .work .buttons a:hover {
+    background-color: #EECB14;
+    color: black;
+    font-size: 1.5rem;
+}
+
 /*Contact Us Design*/
 #contact {
     display: flex;
